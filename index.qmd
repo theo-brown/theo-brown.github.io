@@ -12,7 +12,6 @@ about:
       href: https://linkedin.com/in/theo-brown-uk
     - icon: github
       href: https://github.com/theo-brown
-    - icon: sch
 ---
 
 :::{#about-me}
