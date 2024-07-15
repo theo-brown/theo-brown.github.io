@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Theo Brown",
+    "section": "",
+    "text": "We say that we will put the sun in a box. The idea is pretty. The problem is, we don’t know how to make the box.\n– Pierre Gilles de Gennes\n\n\n\nI’m a first year PhD student at the University College London, supervised by Ilija Bogunovic.\nMy project is jointly supported by the UK Atomic Energy Authority (UKAEA), a government research institute seeking to lead the delivery of sustainable fusion energy, where I am a visiting researcher.\nI work closely with the UKAEA integrated modelling group, designing scenarios for the UK’s proposed next-generation fusion reactor."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Theo Brown",
+    "section": "Research",
+    "text": "Research\nFusion power could be the biggest game-changer in history; to achieve it, we need advanced control systems and highly optimised designs.\nMy research connects ideas from control, optimisation, Bayesian statistics, and plasma physics in order to tackle the hardest engineering challenge humanity has ever faced.\nBuzzwords that get me excited include:\n\nProbabilistic machine learning\nVerifiably robust and safe algorithms for critical systems\nTrajectory planning and controller design\nAdaptive and learning-based control\nPhysics-informed machine learning\nBayesian optimisation"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Theo Brown",
+    "section": "Education",
+    "text": "Education\nPhD, Machine Learning  University College London | Sep 2023 - present\nMEng, Information and Control Engineering  University of Cambridge | Sep 2016 - Jul 2023  Thesis: Reinforcement learning and Bayesian optimisation for tokamak plasma control"
+  },
+  {
+    "objectID": "index.html#hobbies",
+    "href": "index.html#hobbies",
+    "title": "Theo Brown",
+    "section": "Hobbies",
+    "text": "Hobbies\nI’m often found in the garage doing woodwork or outside looking after my garden. I also love hiking, jazz, classic novels, korfball, and board games.\nI’m a passionate advocate for wider recognition and research concerning the long-term impacts of mild traumatic brain injury."
+  }
+]
