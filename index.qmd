@@ -1,0 +1,66 @@
+---
+title: "Theo Brown"
+subtitle: "Using machine learning to design fusion power plants"
+image: img/headshot.jpg
+about:
+  id: about-me
+  template: trestles
+  image-width: 12em
+  image-shape: round
+  links:
+    - icon: linkedin
+      href: https://linkedin.com/in/theo-brown-uk
+    - icon: github
+      href: https://github.com/theo-brown
+    - icon: sch
+---
+
+:::{#about-me}
+
+> We say that we will put the sun in a box. The idea is pretty. The problem is, we don't know how to make the box.
+> 
+> -- Pierre Gilles de Gennes
+
+# About me 
+
+I'm a first year PhD student at the [University College London](https://www.ucl.ac.uk/electronic-electrical-engineering/), supervised by [Ilija Bogunovic](https://ilijabogunovic.com/).
+
+My project is jointly supported by the [UK Atomic Energy Authority](https://www.gov.uk/government/organisations/uk-atomic-energy-authority/about) (UKAEA), a government research institute seeking to **lead the delivery of sustainable fusion energy**, where I am a visiting researcher.
+
+I work closely with the UKAEA integrated modelling group, designing scenarios for the [UK's proposed next-generation fusion reactor](https://step.ukaea.uk/).
+
+:::
+
+## Research
+
+Fusion power could be the biggest game-changer in history; to achieve it, we need advanced control systems and highly optimised designs.
+
+My research connects ideas from **control**, **optimisation**, **Bayesian statistics**, and **plasma physics** in order to tackle the hardest engineering challenge humanity has ever faced.
+
+Buzzwords that get me excited include:
+
+- **Probabilistic** machine learning
+- Verifiably **robust** and **safe** algorithms for critical systems
+- **Trajectory** planning and **controller** design
+- Adaptive and **learning-based** control
+- **Physics-informed** machine learning
+- Bayesian optimisation
+
+## Education
+
+**PhD, Machine Learning**
+<br>
+University College London | *Sep 2023 - present*
+
+**MEng, Information and Control Engineering**
+<br>
+University of Cambridge | *Sep 2016 - Jul 2023*
+<br>
+Thesis: *Reinforcement learning and Bayesian optimisation for tokamak plasma control* 
+
+## Hobbies
+
+I'm often found in the garage doing woodwork or outside looking after my garden. 
+I also love hiking, jazz, classic novels, korfball, and board games.
+
+I'm a passionate advocate for wider recognition  and research concerning the long-term impacts of [mild traumatic brain injury](https://www.cam.ac.uk/research/news/almost-half-of-people-with-concussion-still-show-symptoms-of-brain-injury-six-months-later).

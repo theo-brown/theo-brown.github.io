@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  title: "Theo Brown"
+  search: true
+  favicon: img/headshot.jpg
+  twitter-card: true
+  open-graph: true
+  page-footer: 
+    left: "Copyright © Theo Brown, 2024"
+    right: "Built with [Quarto](https://quarto.org/), hosted on [GitHub Pages](https://pages.github.com/)"
+  
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: false
