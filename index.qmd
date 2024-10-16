@@ -12,6 +12,11 @@ about:
       href: https://linkedin.com/in/theo-brown-uk
     - icon: github
       href: https://github.com/theo-brown
+    - text: "{{< ai cv-square >}}"
+      href: https://raw.githubusercontent.com/theo-brown/cv/main/cv.pdf
+    - text: "{{< ai google-scholar-square >}}"
+      href: https://scholar.google.com/citations?user=m4LY31gAAAAJ
+  
 ---
 
 :::{#about-me}
@@ -56,6 +61,12 @@ University College London | *Sep 2023 - present*
 University of Cambridge | *Sep 2016 - Jul 2023*
 <br>
 Thesis: *Reinforcement learning and Bayesian optimisation for tokamak plasma control* 
+
+## Publications
+
+**Brown, T.**, Cioba, A., & Bogunovic, I. (2024). Sample-efficient Bayesian optimisation using known invariances. Neural Information Processing Systems.
+
+[paper](https://doi.org/10.1109/TPS.2024.3382775){.btn .btn-primary .btn-sm role="button"} [code](https://github.com/theo-brown/jetto-mobo){.btn .btn-secondary .btn-sm role="button"} **Brown, T.**, Marsden, S., Gopakumar, V., Terenin, A., Ge, H., & Casson, F. (2024). Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP. IEEE Transactions on Plasma Science. 
 
 ## Hobbies
 

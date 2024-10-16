@@ -38,6 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,11 +72,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Theo Brown">
 <meta property="og:description" content="Using machine learning to design fusion power plants">
-<meta property="og:image" content="https://theo-brown.github.io/img/headshot.jpg">
+<meta property="og:image" content="img/headshot.jpg">
 <meta property="og:site_name" content="Theo Brown">
 <meta name="twitter:title" content="Theo Brown">
 <meta name="twitter:description" content="Using machine learning to design fusion power plants">
-<meta name="twitter:image" content="https://theo-brown.github.io/img/headshot.jpg">
+<meta name="twitter:image" content="img/headshot.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -113,6 +115,12 @@ ul.task-list li input[type="checkbox"] {
     <i class="bi bi-github"></i>
      <span class="about-link-text"></span>
   </a>
+  <a href="https://raw.githubusercontent.com/theo-brown/cv/main/cv.pdf" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="ai  ai-cv-square"></i></span>
+  </a>
+  <a href="https://scholar.google.com/citations?user=m4LY31gAAAAJ" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="ai  ai-google-scholar-square"></i></span>
+  </a>
 </div>
   </div>
   <div class="about-contents"><div id="about-me">
@@ -147,6 +155,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-anchor-id="education">Education</h2>
 <p><strong>PhD, Machine Learning</strong> <br> University College London | <em>Sep 2023 - present</em></p>
 <p><strong>MEng, Information and Control Engineering</strong> <br> University of Cambridge | <em>Sep 2016 - Jul 2023</em> <br> Thesis: <em>Reinforcement learning and Bayesian optimisation for tokamak plasma control</em></p>
+</section>
+<section id="publications" class="level2">
+<h2 data-anchor-id="publications">Publications</h2>
+<p><strong>Brown, T.</strong>, Cioba, A., &amp; Bogunovic, I. (2024). Sample-efficient Bayesian optimisation using known invariances. Neural Information Processing Systems.</p>
+<p><a href="https://doi.org/10.1109/TPS.2024.3382775" class="btn btn-primary btn-sm" role="button">paper</a> <a href="https://github.com/theo-brown/jetto-mobo" class="btn btn-secondary btn-sm" role="button">code</a> <strong>Brown, T.</strong>, Marsden, S., Gopakumar, V., Terenin, A., Ge, H., &amp; Casson, F. (2024). Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP. IEEE Transactions on Plasma Science.</p>
 </section>
 <section id="hobbies" class="level2">
 <h2 data-anchor-id="hobbies">Hobbies</h2>
@@ -243,7 +256,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/theo-brown\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -21,6 +21,13 @@
     "text": "Education\nPhD, Machine Learning  University College London | Sep 2023 - present\nMEng, Information and Control Engineering  University of Cambridge | Sep 2016 - Jul 2023  Thesis: Reinforcement learning and Bayesian optimisation for tokamak plasma control"
   },
   {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Theo Brown",
+    "section": "Publications",
+    "text": "Publications\nBrown, T., Cioba, A., & Bogunovic, I. (2024). Sample-efficient Bayesian optimisation using known invariances. Neural Information Processing Systems.\npaper code Brown, T., Marsden, S., Gopakumar, V., Terenin, A., Ge, H., & Casson, F. (2024). Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP. IEEE Transactions on Plasma Science."
+  },
+  {
     "objectID": "index.html#hobbies",
     "href": "index.html#hobbies",
     "title": "Theo Brown",
