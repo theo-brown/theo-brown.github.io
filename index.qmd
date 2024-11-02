@@ -64,7 +64,7 @@ Thesis: *Reinforcement learning and Bayesian optimisation for tokamak plasma con
 
 ## Publications
 
- [code](https://github.com/theo-brown/bayesopt_with_invariances){.btn .btn-secondary .btn-sm role="button"} **Brown, T.**, Cioba, A., & Bogunovic, I. (2024). Sample-efficient Bayesian optimisation using known invariances. Neural Information Processing Systems.
+[paper](https://arxiv.org/abs/2410.16972){.btn .btn-primary .btn-sm role="button"} [code](https://github.com/theo-brown/bayesopt_with_invariances){.btn .btn-secondary .btn-sm role="button"} **Brown, T.**, Cioba, A., & Bogunovic, I. (2024). Sample-efficient Bayesian optimisation using known invariances. Neural Information Processing Systems.
 
 [paper](https://doi.org/10.1109/TPS.2024.3382775){.btn .btn-primary .btn-sm role="button"} [code](https://github.com/theo-brown/jetto-mobo){.btn .btn-secondary .btn-sm role="button"} **Brown, T.**, Marsden, S., Gopakumar, V., Terenin, A., Ge, H., & Casson, F. (2024). Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP. IEEE Transactions on Plasma Science. 
 
