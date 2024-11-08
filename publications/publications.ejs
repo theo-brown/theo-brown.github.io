@@ -1,0 +1,33 @@
+```{=html}
+<% for (const item of items) { %>
+        <div class="card mb-3">
+            <div class="grid card-body">
+                <div class="g-col-12 g-col-md-3 d-flex justify-content-center align-items-center">
+                    <img class="rounded" style="max-width: 10rem; height: auto" src="<%- item.image %>" alt="">
+                </div>
+                <div class="g-col-12 g-col-md-9">
+                    <h5 class="card-title">
+                        <%= item.title %>
+                    </h5>
+                    <%= item.authors %>
+                    <br>
+                    <small class="text-muted"><%= item.journal %> <%= item.year %> </small>
+                    <br>
+                    <button onclick="window.location.href='<%= item.link %>'" class="btn btn-light btn-sm stretched-link">
+                        paper
+                    </button>
+                    <button onclick="window.location.href='<%= item.code %>'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
+                        code
+                    </button>
+                    <button onclick="window.location.href='<%= item.blog %>'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
+                        blog
+                    </button>
+                    <button onclick="window.location.href='/<%= item.bibtex %>'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
+                        bibtex
+                    </button>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
+```

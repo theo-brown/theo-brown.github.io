@@ -1,0 +1,17 @@
+- title: Sample-efficient Bayesian optimisation using known invariances
+  authors: Theodore Brown, Alexandru Cioba & Ilija Bogunovic
+  year: 2024
+  journal: NeurIPS
+  image: publications/items/brown2024sample/thumbnail.png
+  link: https://arxiv.org/abs/2410.16972
+  code: https://github.com/theo-brown/bayesopt_with_invariances
+  bibtex: publications/items/brown2024sample/bibtex.bib
+
+- title: Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP
+  authors: Theodore Brown, Stephen Marsden, Vignesh Gopakumar, Alexander Terenin, Hong Ge & Francis Casson
+  year: 2024
+  journal: IEEE Transactions on Plasma Science
+  image: publications/items/brown2024multi/thumbnail.svg
+  link: https://doi.org/10.1109/TPS.2024.3382775
+  code: https://github.com/theo-brown/jetto-mobo
+  bibtex: publications/items/brown2024multi/bibtex.bib
