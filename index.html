@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-authors','listing-year','listing-journal','listing-image','listing-link','listing-code','listing-bibtex',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-id','listing-title','listing-authors','listing-year','listing-journal','listing-link','listing-code',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-authors","listing-year","listing-journal","listing-image","listing-link","listing-code","listing-bibtex"],
+      searchColumns: ["listing-id","listing-title","listing-authors","listing-year","listing-journal","listing-link","listing-code"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -220,64 +220,63 @@ window.Quarto = {
 <h2 data-anchor-id="publications">Publications</h2>
 <div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
 
-        <div class="card mb-3">
-            <div class="grid card-body">
-                <div class="g-col-12 g-col-md-3 d-flex justify-content-center align-items-center">
-                    <img class="rounded" style="max-width: 10rem; height: auto" src="publications/items/brown2024sample/thumbnail.png" alt="">
-                </div>
-                <div class="g-col-12 g-col-md-9">
-                    <h5 class="card-title">
-                        Sample-efficient Bayesian optimisation using known invariances
-                    </h5>
-                    Theodore Brown, Alexandru Cioba &amp; Ilija Bogunovic
-                    <br>
-                    <small class="text-muted">NeurIPS 2024 </small>
-                    <br>
-                    <button onclick="window.location.href='https://arxiv.org/abs/2410.16972'" class="btn btn-light btn-sm stretched-link">
-                        paper
-                    </button>
-                    <button onclick="window.location.href='https://github.com/theo-brown/bayesopt_with_invariances'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        code
-                    </button>
-                    <button onclick="window.location.href=''" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        blog
-                    </button>
-                    <button onclick="window.location.href='/publications/items/brown2024sample/bibtex.bib'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        bibtex
-                    </button>
-                </div>
+    <div class="card mb-3">
+        <div class="grid card-body">
+            <div class="g-col-12 g-col-md-3 d-flex justify-content-center align-items-center">
+                <img class="rounded" style="max-width: 10rem; height: auto" src="publications/brown2024sample/thumbnail" alt="">
+            </div>
+            <div class="g-col-12 g-col-md-9">
+                <h5 class="card-title">
+                    Sample-efficient Bayesian optimisation using known invariances
+                </h5>
+                Theodore Brown, Alexandru Cioba &amp; Ilija Bogunovic
+                <br>
+                <small class="text-muted">NeurIPS 2024 </small>
+                <br>
+                <a class="btn btn-light btn-sm stretched-link" href="https://arxiv.org/abs/2410.16972" "="">
+                    paper
+                </a>
+                <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="https://github.com/theo-brown/bayesopt_with_invariances" "="">
+                    code
+                </a>
+                
+                <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./publications/brown2024sample/bibtex.bib">
+                    bibtex
+                </a>
             </div>
         </div>
-    
-        <div class="card mb-3">
-            <div class="grid card-body">
-                <div class="g-col-12 g-col-md-3 d-flex justify-content-center align-items-center">
-                    <img class="rounded" style="max-width: 10rem; height: auto" src="publications/items/brown2024multi/thumbnail.svg" alt="">
-                </div>
-                <div class="g-col-12 g-col-md-9">
-                    <h5 class="card-title">
-                        Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP
-                    </h5>
-                    Theodore Brown, Stephen Marsden, Vignesh Gopakumar, Alexander Terenin, Hong Ge &amp; Francis Casson
-                    <br>
-                    <small class="text-muted">IEEE Transactions on Plasma Science 2024 </small>
-                    <br>
-                    <button onclick="window.location.href='https://doi.org/10.1109/TPS.2024.3382775'" class="btn btn-light btn-sm stretched-link">
-                        paper
-                    </button>
-                    <button onclick="window.location.href='https://github.com/theo-brown/jetto-mobo'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        code
-                    </button>
-                    <button onclick="window.location.href=''" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        blog
-                    </button>
-                    <button onclick="window.location.href='/publications/items/brown2024multi/bibtex.bib'" class="btn btn-light btn-sm" style="position: relative; z-index: 2;">
-                        bibtex
-                    </button>
-                </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="grid card-body">
+            <div class="g-col-12 g-col-md-3 d-flex justify-content-center align-items-center">
+                <img class="rounded" style="max-width: 10rem; height: auto" src="publications/brown2024multi/thumbnail" alt="">
+            </div>
+            <div class="g-col-12 g-col-md-9">
+                <h5 class="card-title">
+                    Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP
+                </h5>
+                Theodore Brown, Stephen Marsden, Vignesh Gopakumar, Alexander Terenin, Hong Ge &amp; Francis Casson
+                <br>
+                <small class="text-muted">IEEE Transactions on Plasma Science 2024 </small>
+                <br>
+                <a class="btn btn-light btn-sm stretched-link" href="https://doi.org/10.1109/TPS.2024.3382775" "="">
+                    paper
+                </a>
+                <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="https://github.com/theo-brown/jetto-mobo" "="">
+                    code
+                </a>
+                
+                <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./publications/brown2024multi/bibtex.bib">
+                    bibtex
+                </a>
             </div>
         </div>
-    
+    </div>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 </section>
 <section id="hobbies" class="level2">
@@ -286,12 +285,11 @@ window.Quarto = {
 <p>I’m a passionate advocate for wider recognition and research concerning the long-term impacts of <a href="https://www.cam.ac.uk/research/news/almost-half-of-people-with-concussion-still-show-symptoms-of-brain-injury-six-months-later">mild traumatic brain injury</a>.</p>
 
 
-</section></main></div>
 
 
+</section>
 
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -705,7 +703,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
