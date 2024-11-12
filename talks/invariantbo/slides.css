@@ -1,0 +1,14 @@
+.reveal .slide-logo {
+    height: 100px !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    z-index: -999 !important;
+}
+
+.reveal .slide-menu-button {
+    display: none !important;
+}
+
+.reveal .custom-margin .quarto-layout-cell {
+    margin-right: 0px !important;
+}

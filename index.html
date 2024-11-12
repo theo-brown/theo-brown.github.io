@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-title','listing-authors','listing-year','listing-journal','listing-link','listing-code',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-id','listing-title','listing-authors','listing-year','listing-journal','listing-link','listing-code','listing-slides',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-id","listing-title","listing-authors","listing-year","listing-journal","listing-link","listing-code"],
+      searchColumns: ["listing-id","listing-title","listing-authors","listing-year","listing-journal","listing-link","listing-code","listing-slides"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -240,6 +240,11 @@ window.Quarto = {
                     code
                 </a>
                 
+                
+                    <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./talks/invariantbo/slides.html" target="_blank">
+                        slides
+                    </a>
+                
                 <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./publications/brown2024sample/bibtex.bib">
                     bibtex
                 </a>
@@ -266,6 +271,7 @@ window.Quarto = {
                 <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="https://github.com/theo-brown/jetto-mobo" "="">
                     code
                 </a>
+                
                 
                 <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./publications/brown2024multi/bibtex.bib">
                     bibtex

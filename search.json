@@ -25,7 +25,7 @@
     "href": "index.html#publications",
     "title": "Theo Brown",
     "section": "Publications",
-    "text": "Publications\n\n\n    \n        \n            \n                \n            \n            \n                \n                    Sample-efficient Bayesian optimisation using known invariances\n                \n                Theodore Brown, Alexandru Cioba & Ilija Bogunovic\n                \n                NeurIPS 2024 \n                \n                \n                    paper\n                \n                \n                    code\n                \n                \n                \n                    bibtex\n                \n            \n        \n    \n\n    \n        \n            \n                \n            \n            \n                \n                    Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP\n                \n                Theodore Brown, Stephen Marsden, Vignesh Gopakumar, Alexander Terenin, Hong Ge & Francis Casson\n                \n                IEEE Transactions on Plasma Science 2024 \n                \n                \n                    paper\n                \n                \n                    code\n                \n                \n                \n                    bibtex\n                \n            \n        \n    \n\n\nNo matching items"
+    "text": "Publications\n\n\n    \n        \n            \n                \n            \n            \n                \n                    Sample-efficient Bayesian optimisation using known invariances\n                \n                Theodore Brown, Alexandru Cioba & Ilija Bogunovic\n                \n                NeurIPS 2024 \n                \n                \n                    paper\n                \n                \n                    code\n                \n                \n                \n                    \n                        slides\n                    \n                \n                \n                    bibtex\n                \n            \n        \n    \n\n    \n        \n            \n                \n            \n            \n                \n                    Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP\n                \n                Theodore Brown, Stephen Marsden, Vignesh Gopakumar, Alexander Terenin, Hong Ge & Francis Casson\n                \n                IEEE Transactions on Plasma Science 2024 \n                \n                \n                    paper\n                \n                \n                    code\n                \n                \n                \n                \n                    bibtex\n                \n            \n        \n    \n\n\nNo matching items"
   },
   {
     "objectID": "index.html#hobbies",
@@ -33,5 +33,61 @@
     "title": "Theo Brown",
     "section": "Hobbies",
     "text": "Hobbies\nI’m often found in the garage doing woodwork or outside looking after my garden. I also love hiking, jazz, classic novels, korfball, and board games.\nI’m a passionate advocate for wider recognition and research concerning the long-term impacts of mild traumatic brain injury."
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#bayesian-optimisation",
+    "href": "talks/invariantbo/slides.html#bayesian-optimisation",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Bayesian optimisation",
+    "text": "Bayesian optimisation\nWide range of applications\n\n\n\n\n\n\n\n\n\nDrug discovery [C4XD]\n\n\n\n\n\n\n\nChip design [NVIDIA]\n\n\n\n\n\n\nVideo\nNuclear fusion reactors[Proxima Fusion]\n\n\n\n\n\nGoal: sample efficiency"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#symmetry-and-invariance",
+    "href": "talks/invariantbo/slides.html#symmetry-and-invariance",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Symmetry and invariance",
+    "text": "Symmetry and invariance\nHow can we exploit symmetry in BO?\n\n\nObjective function is known to be symmetric\nKey insight: making one observation gives additional information\nIn the noiseless case, this is perfect information"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#invariant-gaussian-processes",
+    "href": "talks/invariantbo/slides.html#invariant-gaussian-processes",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Invariant Gaussian processes",
+    "text": "Invariant Gaussian processes\nNaive method: data augmentation\n\n\nKey insight: making one observation gives additional information\n\n\n\n\nData augmentation: add transformed data to dataset \\[\n\\mathcal{D} \\gets \\mathcal{D} \\cup \\{(\\sigma(x), f(x)) \\quad \\forall \\sigma \\in G, x \\in \\mathcal{D}\\}\n\\]\n\n\n\n\nProblem: computational cost of GP scales with \\(\\mathcal{O}(\\textcolor{#9a2515}{|G|^3} n^3)\\)\n\n\nCan we do better?"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#invariant-gaussian-processes-1",
+    "href": "talks/invariantbo/slides.html#invariant-gaussian-processes-1",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Invariant Gaussian processes",
+    "text": "Invariant Gaussian processes\nOur method: invariant kernel\n\n\nConstruct an invariant kernel: \\[\nk_G(x, x') = \\frac{1}{|G|} \\sum_{\\sigma \\in G} k(x, \\sigma(x'))\n\\]\n\n\n\n\nGPs with this kernel are distributions over invariant functions!\n\n\n\n\n\n\n\n\n\n\n\n\nCompute cost reduced from \\(\\mathcal{O}(\\textcolor{#9a2515}{|G|^3} n^3)\\) to \\(\\mathcal{O}(\\textcolor{#259a15}{|G|} n^3)\\)"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#sample-complexity-for-invariant-kernel-bo",
+    "href": "talks/invariantbo/slides.html#sample-complexity-for-invariant-kernel-bo",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Sample complexity for invariant kernel BO",
+    "text": "Sample complexity for invariant kernel BO\nNumber of samples \\(T\\) for precision \\(\\epsilon\\)\n\n\nOur upper bound:\n\n\n\\[\\begin{align}\n        T = \\tilde{\\mathcal{O}}\\left(\n\\left(\n    {\\textcolor{#259a15}{\\frac{1}{|G|}}}\n\\right)^\\frac{2\\nu + d -1}{2 \\nu}\n\\epsilon^{-\\frac{2\\nu + d -1}{\\nu}}\n\\right)\n\\end{align}\\]\n\n\n\n\nLarge \\(|G|\\) → large reduction in number of samples\nLower bound in our paper"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#synthetic-experiments",
+    "href": "talks/invariantbo/slides.html#synthetic-experiments",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Synthetic experiments",
+    "text": "Synthetic experiments\nInvariant GP-MVR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvariant beats standard\nInvariant beats constrained\nUse subgroups for low-cost approximation (2- and 3- block invariance)"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#application-fusion-reactor-design",
+    "href": "talks/invariantbo/slides.html#application-fusion-reactor-design",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Application: fusion reactor design",
+    "text": "Application: fusion reactor design\nHigh-temperature plasma → zero-carbon, low-waste energy\n\n\nTask: find an operating point with high stability\nActuators are permutation invariant\n\n\n\n\n\n\n\n\n\nUsing an invariant kernel achieves better results!"
+  },
+  {
+    "objectID": "talks/invariantbo/slides.html#sample-efficient-bayesian-optimisation-using-known-invariances",
+    "href": "talks/invariantbo/slides.html#sample-efficient-bayesian-optimisation-using-known-invariances",
+    "title": "Sample-efficient Bayesian optimisation using known invariances",
+    "section": "Sample-efficient Bayesian optimisation using known invariances",
+    "text": "Sample-efficient Bayesian optimisation using known invariances\n🪧 Check out our poster\n📝 Read the paper on arXiv\n🌐 See our blog for more info\n✉️ Reach out to theo.brown@ukaea.uk"
   }
 ]
