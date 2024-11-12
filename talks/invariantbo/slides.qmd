@@ -1,0 +1,171 @@
+---
+title: Sample-efficient Bayesian optimisation <br>using known invariances
+format: 
+    clean-revealjs:
+        css: slides.css
+        logo: images/joint_logos.png
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+subtitle: Neural Information Processing Systems, 2024
+author:
+  - name: Theo Brown
+    email: theo.brown@ukaea.uk
+    affiliations:
+      - UK Atomic Energy Authority 
+      - University College London
+  - name: Alexandru Cioba
+    email: alexandru.cioba@mtkresearch.com
+    affiliations: MediaTek Research
+  - name: Ilija Bogunovic
+    email: i.bogunovic@ucl.ac.uk
+    affiliations: University College London
+title-slide-attributes:
+    data-background-image: images/gp.png
+    data-background-size: cover
+    data-background-opacity: "0.2"
+auto-play-media: true
+---
+
+## Bayesian optimisation
+### Wide range of applications
+
+:::: {layout="[[30, 30, 40]]" layout-valign="center" style="text-align:center;"}
+::: {.fragment}
+![Drug discovery [[C4XD](https://c4xdiscovery.com/our-approach/conformetrix/)]](images/drug_design.gif){loop=true}
+:::
+::: {.fragment}
+![Chip design [[NVIDIA](https://dl.acm.org/doi/abs/10.1145/3569052.3578923)]](images/macro_placement.gif){loop=true}
+:::
+::: {.fragment}
+![Nuclear fusion reactors<br>[[Proxima Fusion](https://www.linkedin.com/posts/proximafusion_stellarators-optimization-automation-activity-7143651503143137281-SO71)]](images/proxima.mp4){loop=true}
+:::
+::::
+[**Goal: sample efficiency**]{.fragment .alert .r-stack}
+
+
+## Symmetry and invariance
+### How can we exploit symmetry in BO?
+
+::: {.incremental}
+- Objective function is known to be symmetric
+- Key insight: [**making one observation gives additional information**]{.alert}
+- In the noiseless case, this is perfect information
+:::
+::: {layout-ncol=3 layout-valign="center"}
+  ![](images/permutation_group.png){height=200 .fragment}
+
+  ![](images/dihedral_group.png){height=200 .fragment}
+
+  ![](images/cyclic_group.png){height=200 .fragment}
+:::
+
+
+## Invariant Gaussian processes
+### Naive method: data augmentation
+
+::: {.fragment}
+- Key insight: [**making one observation gives additional information**]{.alert}
+:::
+::: {.fragment}
+- Data augmentation: add transformed data to dataset
+$$
+\mathcal{D} \gets \mathcal{D} \cup \{(\sigma(x), f(x)) \quad \forall \sigma \in G, x \in \mathcal{D}\}
+$$
+:::
+::: {.fragment}
+- **Problem:** computational cost of GP scales with $\mathcal{O}(\textcolor{#9a2515}{|G|^3} n^3)$
+:::
+
+[**Can we do better?**]{.fragment .alert .r-stack}
+
+
+## Invariant Gaussian processes
+### Our method: invariant kernel
+
+::: {.fragment}
+- Construct an invariant kernel:
+$$
+k_G(x, x') = \frac{1}{|G|} \sum_{\sigma \in G} k(x, \sigma(x'))
+$$
+
+:::
+
+::: {.fragment}
+- GPs with this kernel are distributions over **invariant functions**!
+:::
+
+::: {.fragment}
+![](images/dihedral_sample_1.png){.absolute top=0 right=0 width="300" height="300"}
+:::
+::: {.fragment}
+![](images/dihedral_sample_2.png){.absolute top=0 right=0 width="300" height="300"}
+:::
+::: {.fragment}
+![](images/dihedral_sample_3.png){.absolute top=0 right=0 width="300" height="300"}
+:::
+
+::: {.fragment .r-stack}
+**Compute cost reduced** from $\mathcal{O}(\textcolor{#9a2515}{|G|^3} n^3)$ to $\mathcal{O}(\textcolor{#259a15}{|G|} n^3)$
+:::
+## Sample complexity for invariant kernel BO
+### Number of samples $T$ for precision $\epsilon$
+
+:::: {.fragment}
+- Our upper bound:
+
+::: {.r-stretch}
+
+\begin{align}
+        T = \tilde{\mathcal{O}}\left(
+\left(
+    {\textcolor{#259a15}{\frac{1}{|G|}}}
+\right)^\frac{2\nu + d -1}{2 \nu}
+\epsilon^{-\frac{2\nu + d -1}{\nu}}
+\right)
+\end{align}
+:::
+::::
+::: {.incremental}
+- Large $|G|$ → [**large reduction in number of samples**]{style="color: #259a15"}
+- Lower bound in our paper
+:::
+
+## Synthetic experiments {.custom-margin}
+### Invariant GP-MVR 
+
+::: {layout-ncol=3 layout-valign="center" style="margin-right: 0px;"}
+![](images/perminv2d_mvr_regret_talk.png)
+
+![](images/cyclinv3d_mvr_regret_talk.png)
+
+![](images/perminv6d_mvr_regret_talk.png)
+:::
+
+::: {.incremental}
+- [**Invariant**]{style="color: #EE6677"} beats [standard]{style="color: #4477AA"}
+- [**Invariant**]{style="color: #EE6677"} beats [constrained]{style="color: #AA3377"}
+- Use **subgroups** for low-cost approximation ([**2-**]{style="color: #CCBB44"} and [**3-**]{style="color: #228833"} block invariance)
+:::
+
+## Application: fusion reactor design {background-color="black" background-image="images/fusion.png"}
+### High-temperature plasma → zero-carbon, low-waste energy
+
+::: {.incremental}
+- **Task:** find an operating point with high stability
+- Actuators are **permutation invariant**
+:::
+::: {.fragment layout="[1, 0.4]"}
+- Using an invariant kernel achieves better results!
+![](images/safety_factor_progress.png)
+:::
+
+## Sample-efficient Bayesian optimisation <br>using known invariances {.center style="text-align: center; font-weight: bold" background-image="images/end-background.png" background-opacity="0.2"}
+
+🪧 Check out our [poster](https://neurips.cc/virtual/2024/poster/95186)
+
+📝 Read the paper on [arXiv](https://arxiv.org/abs/2410.16972)
+ 
+🌐 See our [blog](https://theobrown.uk/blog/invariantbo) for more info
+
+✉️ Reach out to [theo.brown@ukaea.uk](mailto:theo.brown@ukaea.uk)

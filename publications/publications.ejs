@@ -24,6 +24,11 @@
                         blog
                     </a>
                 <% } %>
+                <% if (typeof item.slides !== 'undefined') { %>
+                    <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="<%= item.slides %>" target="_blank">
+                        slides
+                    </a>
+                <% } %>
                 <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="/publications/<%= item.id %>/bibtex.bib">
                     bibtex
                 </a>
