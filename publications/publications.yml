@@ -6,6 +6,7 @@
   link: https://arxiv.org/abs/2410.16972
   code: https://github.com/theo-brown/bayesopt_with_invariances
   slides: /talks/invariantbo/slides.qmd
+  blog: /blog/invariantbo
 
 - id: brown2024multi
   title: Multi-objective Bayesian optimization for design of Pareto-optimal current drive profiles in STEP

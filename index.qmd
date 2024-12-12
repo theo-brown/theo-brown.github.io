@@ -20,6 +20,9 @@ listing:
   - id: publications
     template: publications/publications.ejs
     contents: publications/publications.yml
+  - id: blog 
+    contents: blog
+    fields: [title, date, image, description]
 ---
 
 :::{#about-me}
@@ -53,6 +56,16 @@ Buzzwords that get me excited include:
 - **Physics-informed** machine learning
 - Bayesian optimisation
 
+## Publications
+
+:::{#publications}
+:::
+
+## Blog 
+
+:::{#blog}
+:::
+
 ## Education
 
 **PhD, Machine Learning**
@@ -64,11 +77,6 @@ University College London | *Sep 2023 - present*
 University of Cambridge | *Sep 2016 - Jul 2023*
 <br>
 Thesis: *Reinforcement learning and Bayesian optimisation for tokamak plasma control* 
-
-## Publications
-
-:::{#publications}
-:::
 
 ## Hobbies
 
