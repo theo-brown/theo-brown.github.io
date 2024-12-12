@@ -2,7 +2,7 @@
 title: "How can we exploit known symmetry in Bayesian optimisation?"
 description: "Generalised regret bounds for group-invariant BO"
 date: "2024-12-09"
-categories: ["bayesopt", "fusion"]
+categories: ["bayesopt", "fusion", "symmetry", "theory"]
 image: thumbnail.png
 title-block-banner: "#d9dbde"
 author: Theo Brown
@@ -154,7 +154,7 @@ $$
 k_G(x, x') = \frac{1}{|G|} \sum_{\sigma \in G} k(x, \sigma(x')).
 $$
 
-In our paper, we show that these invariant kernels define a Reproducing Kernel Hilbert Space (function space) containing only $G$-invariant functions, and relate the the RKHS of $k_G$ to the RKHS of $k$.
+In our paper, we show that these invariant kernels define a Reproducing Kernel Hilbert Space (function space) containing only $G$-invariant functions, and relate the RKHS of $k_G$ to the RKHS of $k$.
 
 Armed with a way of defining invariant functions via a kernel, we can now exploit **invariance in *any* kernelised machine learning algorithm** - such as Gaussian processes and Bayesian optimisation.
 
@@ -216,7 +216,7 @@ There's a whole lot more to this work that hasn't gone into the blog post - chec
 
 
 
-![What if we apply this to a difficult problem from nuclear fusion?](iter.png)
+![What if we apply this to a difficult problem from nuclear fusion? [[ITER.org](https://www.iter.org/)]](iter.png)
 :::
 :::
 
