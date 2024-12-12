@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a6e4fac2853bd5d96ec395c85ff166f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -79,13 +79,41 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-title','listing-authors','listing-year','listing-journal','listing-link','listing-code','listing-slides',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-id','listing-title','listing-authors','listing-year','listing-journal','listing-link','listing-code','listing-slides','listing-blog',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-id","listing-title","listing-authors","listing-year","listing-journal","listing-link","listing-code","listing-slides"],
+      searchColumns: ["listing-id","listing-title","listing-authors","listing-year","listing-journal","listing-link","listing-code","listing-slides","listing-blog"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -211,11 +239,6 @@ window.Quarto = {
 <li>Bayesian optimisation</li>
 </ul>
 </section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>PhD, Machine Learning</strong> <br> University College London | <em>Sep 2023 - present</em></p>
-<p><strong>MEng, Information and Control Engineering</strong> <br> University of Cambridge | <em>Sep 2016 - Jul 2023</em> <br> Thesis: <em>Reinforcement learning and Bayesian optimisation for tokamak plasma control</em></p>
-</section>
 <section id="publications" class="level2">
 <h2 data-anchor-id="publications">Publications</h2>
 <div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
@@ -239,6 +262,10 @@ window.Quarto = {
                 <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="https://github.com/theo-brown/bayesopt_with_invariances" "="">
                     code
                 </a>
+                
+                    <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./blog/invariantbo">
+                        blog
+                    </a>
                 
                 
                     <a class="btn btn-light btn-sm" style="position: relative; z-index: 2;" href="./talks/invariantbo/slides.html" target="_blank">
@@ -284,6 +311,46 @@ window.Quarto = {
 No matching items
 </div>
 </div>
+</section>
+<section id="blog" class="level2">
+<h2 data-anchor-id="blog">Blog</h2>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="YmF5ZXNvcHQlMkNmdXNpb24=" data-listing-date-sort="1733702400000" data-listing-file-modified-sort="1733965420963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1181">
+<div class="thumbnail">
+<p><a href="./blog/invariantbo/index.html" class="no-external"></a></p><a href="./blog/invariantbo/index.html" class="no-external">
+<p><img loading="lazy" src="./blog/invariantbo/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="./blog/invariantbo/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/invariantbo/index.html" class="no-external">How can we exploit known symmetry in Bayesian optimisation?</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog/invariantbo/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./blog/invariantbo/index.html" class="no-external">Generalised regret bounds for group-invariant BO</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./blog/invariantbo/index.html" class="no-external">
+<div class="listing-date">
+Dec 9, 2024
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p><strong>PhD, Machine Learning</strong> <br> University College London | <em>Sep 2023 - present</em></p>
+<p><strong>MEng, Information and Control Engineering</strong> <br> University of Cambridge | <em>Sep 2016 - Jul 2023</em> <br> Thesis: <em>Reinforcement learning and Bayesian optimisation for tokamak plasma control</em></p>
 </section>
 <section id="hobbies" class="level2">
 <h2 data-anchor-id="hobbies">Hobbies</h2>
@@ -371,8 +438,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -483,7 +548,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
