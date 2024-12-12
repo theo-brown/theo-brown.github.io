@@ -137,6 +137,8 @@ window.Quarto = {
                           <div class="quarto-categories">
                 <div class="quarto-category">bayesopt</div>
                 <div class="quarto-category">fusion</div>
+                <div class="quarto-category">symmetry</div>
+                <div class="quarto-category">theory</div>
               </div>
                   </div>
   </div>
@@ -332,7 +334,7 @@ k_G(x, x') = \frac{1}{|G|^2} \sum_{\sigma \in G} \sum_{\sigma' \in G} k(\sigma(x
 <p><span class="math display">\[
 k_G(x, x') = \frac{1}{|G|} \sum_{\sigma \in G} k(x, \sigma(x')).
 \]</span></p>
-<p>In our paper, we show that these invariant kernels define a Reproducing Kernel Hilbert Space (function space) containing only <span class="math inline">\(G\)</span>-invariant functions, and relate the the RKHS of <span class="math inline">\(k_G\)</span> to the RKHS of <span class="math inline">\(k\)</span>.</p>
+<p>In our paper, we show that these invariant kernels define a Reproducing Kernel Hilbert Space (function space) containing only <span class="math inline">\(G\)</span>-invariant functions, and relate the RKHS of <span class="math inline">\(k_G\)</span> to the RKHS of <span class="math inline">\(k\)</span>.</p>
 <p>Armed with a way of defining invariant functions via a kernel, we can now exploit <strong>invariance in <em>any</em> kernelised machine learning algorithm</strong> - such as Gaussian processes and Bayesian optimisation.</p>
 </section>
 <section id="performance-guarantees-of-invariant-bo" class="level3">
@@ -398,7 +400,7 @@ Figure&nbsp;5: Simple regret performance for GP-MVR on synthetic test functions
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="iter.png" class="img-fluid figure-img"></p>
-<figcaption>What if we apply this to a difficult problem from nuclear fusion?</figcaption>
+<figcaption>What if we apply this to a difficult problem from nuclear fusion? [<a href="https://www.iter.org/">ITER.org</a>]</figcaption>
 </figure>
 </div>
 </div>
