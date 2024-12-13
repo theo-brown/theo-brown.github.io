@@ -175,16 +175,8 @@ window.Quarto = {
 
 
 
-<div id="fig-video" class="quarto-float quarto-figure quarto-figure-center anchored" autoplay="true">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-video-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<video src="animation.mp4" class="img-fluid" autoplay="true" controls=""><a href="animation.mp4">Video</a></video>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-video-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Incorporating symmetry by using an invariant kernel boosts sample efficiency - but by how much?
-</figcaption>
-</figure>
-</div>
+<p>::: ::: {.g-col-12} <video src="animation.mp4" class="img-fluid" autoplay="true" controls=""><a href="animation.mp4">Video</a></video></p>
+<p>Incorporating symmetry by using an invariant kernel boosts sample efficiency - but by how much? ::: :::</p>
 <p>Taking a fully Bayesian approach to optimisation means incorporating <em>all</em> prior knowledge about our objective function into the optimisation process. Often in the physical sciences we come to the table knowing quite a lot about the shape of the objective, whether that’s from knowledge of the underlying governing equations, physical principles, or geometry of the problem. <a href="https://neurips.cc/virtual/2024/poster/95186">Our NeurIPS 2024</a> <a href="https://arxiv.org/abs/2410.16972">paper</a> derives new, general guarantees on performance of Bayesian optimisation algorithms that exploit a problem’s invariances.</p>
 <section id="what-is-invariance" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-invariance">What is invariance?</h3>
@@ -219,7 +211,7 @@ f(\sigma(x)) = \sigma (f(x)).
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crystal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Crystallographic groups [<a href="https://arxiv.org/abs/2306.05261">Adams &amp; Orbanz, 2023</a>]
+Figure&nbsp;1: Crystallographic groups [<a href="https://arxiv.org/abs/2306.05261">Adams &amp; Orbanz, 2023</a>]
 </figcaption>
 </figure>
 </div>
@@ -246,7 +238,7 @@ Figure&nbsp;2: Crystallographic groups [<a href="https://arxiv.org/abs/2306.0526
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dihedral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Dihedral groups
+Figure&nbsp;2: Dihedral groups
 </figcaption>
 </figure>
 </div>
@@ -292,7 +284,7 @@ Figure&nbsp;3: Dihedral groups
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dihedral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: For an invariant objective function, observing at the red point gives exact `bonus’ observations of the function value at the white points. We want to capture this information in the kernel.
+Figure&nbsp;3: For an invariant objective function, observing at the red point gives exact `bonus’ observations of the function value at the white points. We want to capture this information in the kernel.
 </figcaption>
 </figure>
 </div>
@@ -323,7 +315,7 @@ k_G(x_\mathrm{black}, x_\mathrm{red}) = k_G(x_\mathrm{black}, x_\mathrm{white}),
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arrows-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: If we capture the underlying invariance (R), the value of the black point is equally correlated with the value at the red and white points
+Figure&nbsp;4: If we capture the underlying invariance (R), the value of the black point is equally correlated with the value at the red and white points
 </figcaption>
 </figure>
 </div>
@@ -364,7 +356,7 @@ k_G(x, x') = \frac{1}{|G|} \sum_{\sigma \in G} k(x, \sigma(x')).
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-experiments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Simple regret performance for GP-MVR on synthetic test functions
+Figure&nbsp;5: Simple regret performance for GP-MVR on synthetic test functions
 </figcaption>
 </figure>
 </div>
